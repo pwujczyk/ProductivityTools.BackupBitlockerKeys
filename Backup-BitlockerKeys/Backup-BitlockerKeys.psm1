@@ -1,9 +1,13 @@
 function BackupBitlockerKey($letter, $destinationPath)
 {
 	$volumeDetails=Get-BitLockerVolume -MountPoint $letter
-	New-Item $destinationPath -ItemType Directory
+	if ($(Test-Path $destinationPath) -eq $false)
+	{
+		New-Item $destinationPath -ItemType Directory | Out-Null
+	}
 	$fileDestination=Join-Path $destinationPath "$letter.bitlocker"
 	$volumeDetails.KeyProtector | Out-File $fileDestination
+	Write-Verbose "Recovery key saved in $fileDestination"
 }
 
 
@@ -50,3 +54,5 @@ function Backup-BitlockerKeys {
 		}
 	}
 }
+
+Export-ModuleMember Backup-BitlockerKeys 
