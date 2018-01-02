@@ -20,4 +20,4 @@ It can be installed using powershell using commant
 `Install-Module Backup-BitlockerKeys`
 
 More information under link: 
-[http://www.productivitytools.tech/psbackup-bitlockerkeys/](http://www.productivitytools.tech/psbackup-bitlockerkeys/)
+[http://www.productivitytools.tech/backup-bitlockerkeys/](http://www.productivitytools.tech/backup-bitlockerkeys/)
