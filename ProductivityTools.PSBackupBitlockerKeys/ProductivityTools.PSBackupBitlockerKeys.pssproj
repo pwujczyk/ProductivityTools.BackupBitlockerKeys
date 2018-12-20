@@ -28,8 +28,8 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <Compile Include="Backup-BitlockerKeys.psd1" />
-    <Compile Include="Backup-BitlockerKeys.psm1" />
+    <Compile Include="ProductivityTools.PSBackupBitlockerKeys.psd1" />
+    <Compile Include="ProductivityTools.PSBackupBitlockerKeys.psm1" />
     <Compile Include="Runner.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
