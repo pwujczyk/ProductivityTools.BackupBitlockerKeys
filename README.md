@@ -15,7 +15,7 @@ It gets all bit-locker volumes and saves recovery keys to specified localization
 
 <!--more-->
 
-It checks all connected drives if any of them is bit-locker protected. If this situation occurs it saves recovery password to given location.
+It checks all connected drives if any of them is bit-locker protected. If this situation occurs it saves the recovery password to a given location.
 
 ```Powershell
 Backup-BitlockerKeys -Destination d:\destination
@@ -28,7 +28,7 @@ Backup-BitlockerKeys -Destination d:\destination -ToDateDirectory
 
 
 
-Module depends on Get-DateName and Get-OneDriveDirectory so it can automatically detect where OneDrive directory is placed and save file in the directory which has date in the name.
+The Module depends on Get-DateName and Get-OneDriveDirectory so it can automatically detect where the OneDrive directory is placed and save file in the directory which has a date in the name.
 
 ```Powershell
 Backup-BitlockerKeys -Destination destination -ToDateDirectory -ToPersonalOneDrive
@@ -38,7 +38,7 @@ Backup-BitlockerKeys -Destination destination -ToDateDirectory -ToBusinessOneDri
 
 ![BackupBitlockerKeys](Images/Backup-BitlockerKeysOneDrive.png)
 
-It can be installed using powershell using commant
+It can be installed using PowerShell using the command
 
 ```Powershell
 Install-Module Backup-BitlockerKeys
