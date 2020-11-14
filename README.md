@@ -41,5 +41,5 @@ Backup-BitlockerKeys -Destination destination -ToDateDirectory -ToBusinessOneDri
 It can be installed using PowerShell using the command
 
 ```Powershell
-Install-Module Backup-BitlockerKeys
+Install-Module ProductivityTools.BackupBitlockerKeys
 ```
